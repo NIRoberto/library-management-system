@@ -1,41 +1,12 @@
-* {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    margin: 0;
-    padding: 0;
+:root {
+  --main-color: #029ddd;
+  --main-bg-color :#edf9ff;
+  --main-dashboard-color:##036F9D;
+  --text-color:#222222;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background: #029DDD;
-    align-items: center;
+
+*{
+    font-family: 'Poppins', sans-serif;
 }
 
-nav  ul{
-    display: flex;
-    list-style-type: none;
-}
-nav ul li a{
-    margin-left: 2rem;
-    color: white;
-    text-decoration: none;
-}
-nav ul li a:hover{
-    font-weight: bold;
-}
-main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin: 1rem;
-}
-h3{
-    color: white;
-    text-align: center;
-}
-
-img{
-    width:100%;
-}
