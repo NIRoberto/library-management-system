@@ -1,12 +1,217 @@
 :root {
   --main-color: #029ddd;
-  --main-bg-color :#edf9ff;
-  --main-dashboard-color:##036F9D;
-  --text-color:#222222;
+  --main-color-2: #016792;
+  --main-bg-color: #edf9ff;
+  --main-dashboard-color: ##036f9d;
+  --text-color: #222222;
 }
 
-
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  background-color: var(--main-bg-color);
+  overflow-x: hidden;
 }
 
+header {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+header nav div h1 {
+  color: var(--main-color);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header nav .burger {
+  display: none;
+}
+
+header nav div ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header nav div ul li a {
+  text-decoration: none;
+  margin-left: 2rem;
+  color: var(--text-color);
+}
+header nav div ul li a:hover {
+  color: var(--main-color);
+}
+header nav div .user {
+  /* border: 1px solid #029ddd; */
+  display: flex;
+  gap: 2rem;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+header nav div ul .register {
+  background-color: var(--main-color);
+  border-radius: 12px;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+header nav div ul .register:hover {
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+main div .img {
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+  background-color: #000000;
+  overflow: hidden;
+  overflow-x: hidden;
+
+}
+main div img {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+
+}
+main div div {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  margin-left: 2rem;
+  transform: translateY(-50%);
+}
+main div div h1 {
+  color: var(--main-color);
+  font-size: 3rem;
+  width: 60%;
+}
+main div div p {
+  width: 40%;
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+main div div a {
+  background-color: var(--main-color);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  margin-top: 2rem;
+  transition: 1s;
+}
+main div div a:hover {
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  color: var(--main-color);
+  transition: 1s;
+}
+
+/* section  of the book  we have */
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+section div ul {
+  display: flex;
+}
+section div ul a {
+  margin-left: 1rem;
+  color: var(--text-color);
+  background-color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+section div ul a:hover {
+  color: var(--main-color);
+}
+
+section .books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+section .books article {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+section .books article img {
+  width: 100%;
+  height: 15rem;
+}
+
+/*   footer  */
+
+ul {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li {
+  padding: 0.3rem 0;
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  place-items: center;
+  background-color: var(--main-color-2);
+  padding: 2rem;
+  color: white;
+}
+
+.last {
+  padding: 1rem;
+  text-align: center;
+  font-size: small;
+  background-color: #024e6e;
+  color: wheat;
+}
+footer .contact {
+  margin-top: 3rem;
+}
+footer form {
+  display: flex;
+  margin-top: 0.2rem;
+  flex-direction: column;
+}
+
+footer form input,
+footer form textarea {
+  padding: 0.3rem 0.2rem;
+  border-radius: 6px;
+  margin: 0.2rem 0;
+  outline: none;
+  border: 1px solid var(--text-color);
+}
+footer button {
+  background-color: white;
+  padding: 0.3rem 0.2rem;
+  outline: none;
+  border-radius: 6px;
+}

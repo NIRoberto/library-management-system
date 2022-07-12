@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Library System</title>
+    <link rel="stylesheet" href="/css/auth.css">
   </head>
   <body>
-    <div>
-        <a href="/index.html">
-            <h1>UR LMS</h1>
-        </a>
-      <form>
+    <div class="div">
+  <div class="login">
+    <center>
+      <a href="/index.html">
+        <h1>UR LMS</h1>
+      </a>
+      <form action="/html/dashboard.html">
         <label for="email">
           <span>Email</span>
           <input type="text" name="email" id="email" />
@@ -20,11 +23,17 @@
           <span>Password</span>
           <input type="password" name="password" id="password" />
         </label>
-        <button>Login</button>
+          <button>
+             <!-- <a  href="/html/dashboard.html"> -->
+               Login
+              <!-- </a>       -->
+          </button>
         <div>
           <a href="/html/register.html">Create account here</a>
           <span>If you are not registered Yet.</span>
-        </div>
+        </center>
+      </div>
+      </div>
       </form>
     </div>
   </body>
