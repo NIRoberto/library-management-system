@@ -19,6 +19,12 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  background-color: white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -42,6 +48,7 @@ header nav div ul {
   list-style-type: none;
   display: flex;
 }
+
 
 header nav div ul li a {
   text-decoration: none;
@@ -69,6 +76,57 @@ header nav div ul .register:hover {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
+/*   navigation media queries */
+
+@media (max-width :760px){
+  /* header nav div {
+    position: relative;
+  } */
+  header nav div ul {
+  /* display: none; */
+  position: absolute;
+  top: 4.7rem;
+  left: 0;
+  z-index: 3;
+  transition: 1s ease-in-out;
+  flex-direction: column;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-color);
+  /* padding: 2rem; */
+}
+  header nav div li  {
+  padding: 2rem;
+  position: relative;
+  border: 1px ;
+}
+header nav ul li div{
+  border:1px solid green;
+
+}
+header nav div ul li a {
+  color: white;
+}
+header nav div ul li a:hover {
+text-decoration: underline;
+
+color: white;
+
+}
+
+header nav div ul .register{
+  display: none;
+}
+header nav .burger {
+  display: flex;
+  color: var(--main-color);
+  cursor: pointer;
+  border: 1px solid red;
+}
+}
+
+/*    */
 main div .img {
   position: relative;
   width: 100%;
@@ -86,7 +144,7 @@ main div img {
 }
 main div div {
   position: absolute;
-  top: 60%;
+  top: 50%;
   width: 100%;
   margin-left: 2rem;
   transform: translateY(-50%);
@@ -109,7 +167,6 @@ main div div a {
   text-decoration: none;
   color: white;
   margin-top: 2rem;
-  transition: 1s;
 }
 main div div a:hover {
   background-color: white;
@@ -119,7 +176,6 @@ main div div a:hover {
 }
 
 /* section  of the book  we have */
-
 section {
   display: flex;
   flex-direction: column;
@@ -161,6 +217,11 @@ section .books article img {
   height: 15rem;
 }
 
+
+/* 
+books section
+
+*/
 /*   footer  */
 
 ul {
