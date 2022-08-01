@@ -11,275 +11,30 @@
     <!-- Font awesome  -->
     <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet" />
     <!-- google fonts -->
+
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
     <title>Home | Library management System</title>
 </head>
 <link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/book.css">
 
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <h1>UR LMS</h1>
-            </div>
             <div class="div">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <div class="dropdown">
-                        <li><a href="/">Category</a></li>
-                        <div  class="category">
-                            <a class="js-side-nav-cat" href="#" tabindex="-1">Development</a>
-                            <div>
-                                <a data-id="8" class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Web
-                                    Development</a>
-                                <a data-id="558" class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Data
-                                    Science</a>
-                                <a class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Mobile
-                                    Development</a>
-                                <a class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Programming Languages</a>
-                                <a class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Game
-                                    Development</a>
-                                <a class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Database
-                                    Design &amp; Development</a>
-                                <a class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Software Testing</a>
-                                <a data-id="20" class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Software
-                                    Engineering</a>
-                                <a data-id="362" class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Software
-                                    Development Tools</a>
-                                <a data-id="575" class="js-side-nav-cat js-subcat" href="#" tabindex="-1">No-Code
-                                    Development</a>
-                            </div>
-                            <a data-id="268" class="js-side-nav-cat" href="/courses/business/"
-                                tabindex="-1">Business</a>
-                            <div>
-                                <a class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Entrepreneurship</a>
-                                <a class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Communication</a>
-                                <a class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Management</a>
-                                <a class="js-side-nav-cat js-subcat" href="#" tabindex="-1">Sales</a>
-                                <a class="js-side-nav-cat js-subcat" href="/courses/business/strategy/"
-                                    tabindex="-1">Business
-                                    Strategy</a>
-                                <a class="js-side-nav-cat js-subcat" href="/courses/business/operations/"
-                                    tabindex="-1">Operations</a>
-                                <a class="js-side-nav-cat js-subcat" href="/courses/business/project-management/"
-                                    tabindex="-1">Project
-                                    Management</a>
-                                <a class="js-side-nav-cat js-subcat" href="/courses/business/business-law/"
-                                    tabindex="-1">Business
-                                    Law</a>
-                                <a class="js-side-nav-cat js-subcat"
-                                    href="/courses/business/analytics-and-intelligence/" tabindex="-1">Business
-                                    Analytics &amp; Intelligence</a>
-                                <a class="js-side-nav-cat js-subcat" href="/courses/business/human-resources/"
-                                    tabindex="-1">Human
-                                    Resources</a>
-                                <a class="js-side-nav-cat js-subcat" href="/courses/business/industry/"
-                                    tabindex="-1">Industry</a>
-                                <a dclass="js-side-nav-cat js-subcat" href="/courses/business/e-commerce/"
-                                    tabindex="-1">E-Commerce</a>
-                                <a class="js-side-nav-cat js-subcat" href="/courses/business/media/"
-                                    tabindex="-1">Media</a>
-                                <a class="js-side-nav-cat js-subcat" href="/courses/business/real-estate/"
-                                    tabindex="-1">Real
-                                    Estate</a>
-                                <a data-id="60" class="js-side-nav-cat js-subcat"
-                                    href="/courses/business/other-business/" tabindex="-1">Other
-                                    Business</a>
-                            </div>
-                            <a data-id="328" class="js-side-nav-cat" href="/courses/finance-and-accounting/"
-                                tabindex="-1">Finance &amp;
-                                Accounting</a>
-                            <div>
-                                <a data-id="530" class="js-side-nav-cat js-subcat"
-                                    href="/courses/finance-and-accounting/accounting-bookkeeping/"
-                                    tabindex="-1">Accounting &amp; Bookkeeping</a>
-                                <a data-id="532" class="js-side-nav-cat js-subcat"
-                                    href="/courses/finance-and-accounting/compliance/" tabindex="-1">Compliance</a>
-                                <a data-id="534" class="js-side-nav-cat js-subcat"
-                                    href="/courses/finance-and-accounting/cryptocurrency-and-blockchain/"
-                                    tabindex="-1">Cryptocurrency &amp;
-                                    Blockchain</a>
-                                <a data-id="536" class="js-side-nav-cat js-subcat"
-                                    href="/courses/finance-and-accounting/economics/" tabindex="-1">Economics</a>
-                                <a data-id="540" class="js-side-nav-cat js-subcat"
-                                    href="/courses/finance-and-accounting/finance-management/" tabindex="-1">Finance</a>
-                                <a data-id="542" class="js-side-nav-cat js-subcat"
-                                    href="/courses/finance-and-accounting/finance-certification-and-exam-prep/"
-                                    tabindex="-1">Finance Cert &amp;
-                                    Exam Prep</a>
-                                <a data-id="544" class="js-side-nav-cat js-subcat"
-                                    href="/courses/finance-and-accounting/financial-modeling-and-analysis/"
-                                    tabindex="-1">Financial Modeling &amp;
-                                    Analysis</a>
-                                <a data-id="546" class="js-side-nav-cat js-subcat"
-                                    href="/courses/finance-and-accounting/investing-and-trading/"
-                                    tabindex="-1">Investing &amp; Trading</a>
-                                <a data-id="548" class="js-side-nav-cat js-subcat"
-                                    href="/courses/finance-and-accounting/money-management-tools/" tabindex="-1">Money
-                                    Management Tools</a>
-                                <a data-id="550" class="js-side-nav-cat js-subcat"
-                                    href="/courses/finance-and-accounting/taxes/" tabindex="-1">Taxes</a>
-                                <a data-id="552" class="js-side-nav-cat js-subcat"
-                                    href="/courses/finance-and-accounting/other-finance-and-accounting/"
-                                    tabindex="-1">Other Finance &amp;
-                                    Accounting</a>
-                            </div>
-                            <a data-id="294" class="js-side-nav-cat" href="/courses/it-and-software/" tabindex="-1">IT
-                                &amp; Software</a>
-                            <div>
-                                <a data-id="132" class="js-side-nav-cat js-subcat"
-                                    href="/courses/it-and-software/it-certification/" tabindex="-1">IT
-                                    Certifications</a>
-                                <a data-id="134" class="js-side-nav-cat js-subcat"
-                                    href="/courses/it-and-software/network-and-security/" tabindex="-1">Network &amp;
-                                    Security</a>
-                                <a data-id="136" class="js-side-nav-cat js-subcat"
-                                    href="/courses/it-and-software/hardware/" tabindex="-1">Hardware</a>
-                                <a data-id="138" class="js-side-nav-cat js-subcat"
-                                    href="/courses/it-and-software/operating-systems/" tabindex="-1">Operating Systems
-                                    &amp; Servers</a>
-                                <a data-id="140" class="js-side-nav-cat js-subcat"
-                                    href="/courses/it-and-software/other-it-and-software/" tabindex="-1">Other IT &amp;
-                                    Software</a>
-                            </div>
-                            <a data-id="292" class="js-side-nav-cat" href="/courses/office-productivity/"
-                                tabindex="-1">Office Productivity</a>
-                            <div>
-                                <a data-id="96" class="js-side-nav-cat js-subcat"
-                                    href="/courses/office-productivity/microsoft/" tabindex="-1">Microsoft</a>
-                                <a data-id="98" class="js-side-nav-cat js-subcat"
-                                    href="/courses/office-productivity/apple/" tabindex="-1">Apple</a>
-                                <a data-id="100" class="js-side-nav-cat js-subcat"
-                                    href="/courses/office-productivity/google/" tabindex="-1">Google</a>
-                                <a data-id="102" class="js-side-nav-cat js-subcat"
-                                    href="/courses/office-productivity/sap/" tabindex="-1">SAP</a>
-                                <a data-id="106" class="js-side-nav-cat js-subcat"
-                                    href="/courses/office-productivity/oracle/" tabindex="-1">Oracle</a>
-                                <a data-id="108" class="js-side-nav-cat js-subcat"
-                                    href="/courses/office-productivity/other-productivity/" tabindex="-1">Other Office
-                                    Productivity</a>
-                            </div>
-                            <a data-id="296" class="js-side-nav-cat" href="/courses/personal-development/"
-                                tabindex="-1">Personal Development</a>
-                            <div>
-                                <a data-id="142" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/personal-transformation/" tabindex="-1">Personal
-                                    Transformation</a>
-                                <a data-id="144" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/productivity/" tabindex="-1">Personal
-                                    Productivity</a>
-                                <a data-id="146" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/leadership/" tabindex="-1">Leadership</a>
-                                <a data-id="150" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/career-development/" tabindex="-1">Career
-                                    Development</a>
-                                <a data-id="152" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/parenting-and-relationships/"
-                                    tabindex="-1">Parenting &amp; Relationships</a>
-                                <a data-id="156" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/happiness/" tabindex="-1">Happiness</a>
-                                <a data-id="577" class="js-side-nav-cat js-subcat"
-                                    href="/courses/lifestyle/esoteric-practices/" tabindex="-1">Esoteric Practices</a>
-                                <a data-id="158" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/religion-and-spirituality/"
-                                    tabindex="-1">Religion &amp; Spirituality</a>
-                                <a data-id="160" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/personal-brand-building/" tabindex="-1">Personal
-                                    Brand Building</a>
-                                <a data-id="164" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/creativity/" tabindex="-1">Creativity</a>
-                                <a data-id="166" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/influence/" tabindex="-1">Influence</a>
-                                <a data-id="168" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/self-esteem-and-confidence/" tabindex="-1">Self
-                                    Esteem &amp; Confidence</a>
-                                <a data-id="170" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/stress-management/" tabindex="-1">Stress
-                                    Management</a>
-                                <a data-id="172" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/memory/" tabindex="-1">Memory
-                                    &amp; Study Skills</a>
-                                <a data-id="176" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/motivation/" tabindex="-1">Motivation</a>
-                                <a data-id="178" class="js-side-nav-cat js-subcat"
-                                    href="/courses/personal-development/other-personal-development/" tabindex="-1">Other
-                                    Personal Development</a>
-                            </div>
-                            <a data-id="269" class="js-side-nav-cat" href="/courses/design/" tabindex="-1">Design</a>
-                            <div>
-                                <a data-id="6" class="js-side-nav-cat js-subcat" href="/courses/design/web-design/"
-                                    tabindex="-1">Web Design</a>
-                                <a data-id="110" class="js-side-nav-cat js-subcat"
-                                    href="/courses/design/graphic-design-and-illustration/" tabindex="-1">Graphic Design
-                                    &amp; Illustration</a>
-                                <a data-id="112" class="js-side-nav-cat js-subcat" href="/courses/design/design-tools/"
-                                    tabindex="-1">Design
-                                    Tools</a>
-                                <a data-id="114" class="js-side-nav-cat js-subcat"
-                                    href="/courses/design/user-experience/" tabindex="-1">User
-                                    Experience Design</a>
-                                <a data-id="116" class="js-side-nav-cat js-subcat" href="/courses/design/game-design/"
-                                    tabindex="-1">Game Design</a>
-                                <a data-id="120" class="js-side-nav-cat js-subcat"
-                                    href="/courses/design/3d-and-animation/" tabindex="-1">3D &amp;
-                                    Animation</a>
-                                <a data-id="122" class="js-side-nav-cat js-subcat" href="/courses/design/fashion/"
-                                    tabindex="-1">Fashion Design</a>
-                                <a data-id="124" class="js-side-nav-cat js-subcat"
-                                    href="/courses/design/architectural-design/" tabindex="-1">Architectural Design</a>
-                                <a data-id="128" class="js-side-nav-cat js-subcat"
-                                    href="/courses/design/interior-design/" tabindex="-1">Interior
-                                    Design</a>
-                                <a data-id="130" class="js-side-nav-cat js-subcat" href="/courses/design/other-design/"
-                                    tabindex="-1">Other
-                                    Design</a>
-                            </div>
-                            <a data-id="290" class="js-side-nav-cat" href="/courses/marketing/"
-                                tabindex="-1">Marketing</a>
-                            <div>
-                                <a data-id="62" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/digital-marketing/" tabindex="-1">Digital
-                                    Marketing</a>
-                                <a data-id="64" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/search-engine-optimization/" tabindex="-1">Search Engine
-                                    Optimization</a>
-                                <a data-id="66" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/social-media-marketing/" tabindex="-1">Social Media
-                                    Marketing</a>
-                                <a data-id="68" class="js-side-nav-cat js-subcat" href="/courses/marketing/branding/"
-                                    tabindex="-1">Branding</a>
-                                <a data-id="70" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/marketing-fundamentals/" tabindex="-1">Marketing
-                                    Fundamentals</a>
-                                <a data-id="72" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/analytics-and-automation/" tabindex="-1">Marketing
-                                    Analytics &amp; Automation</a>
-                                <a data-id="74" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/public-relations/" tabindex="-1">Public
-                                    Relations</a>
-                                <a data-id="76" class="js-side-nav-cat js-subcat" href="/courses/marketing/advertising/"
-                                    tabindex="-1">Paid
-                                    Advertising</a>
-                                <a data-id="78" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/video-and-mobile-marketing/" tabindex="-1">Video &amp;
-                                    Mobile Marketing</a>
-                                <a data-id="80" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/content-marketing/" tabindex="-1">Content
-                                    Marketing</a>
-                                <a data-id="86" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/growth-hacking/" tabindex="-1">Growth
-                                    Hacking</a>
-                                <a data-id="88" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/affiliate-marketing/" tabindex="-1">Affiliate Marketing</a>
-                                <a data-id="90" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/product-marketing/" tabindex="-1">Product
-                                    Marketing</a>
-                                <a data-id="94" class="js-side-nav-cat js-subcat"
-                                    href="/courses/marketing/other-marketing/" tabindex="-1">Other
-                                    Marketing</a>
-                            </div>
+
+                <div class="logo">
+                    <h1>UR LMS</h1>
+                </div>
+                <div class="div">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <div class="dropdown">
+                            <li><a href="#">Category</a></li>
+
                         </div>
                         </a></li>
                         <li><a href="">
@@ -288,19 +43,19 @@
                         <li><a href=""></a></li>
                         <li><a href=""></a></li>
                         <li><a href=""></a></li>
-                </ul>
+                    </ul>
+                </div>
             </div>
             </div>
-            <li><input type="search" name="search" id="search"></li>
-            <li><a class="login" href="html/login.html">Login</a></li>
+
             </ul>
             </div>
-            <div>
-                <ul class="user">
-                    <li>
-                        <a class="register" href="/html/register.html">Create account</a>
-                    </li>
-                </ul>
+            <div class=" search">
+                <div class="main">
+
+                    <input type="search" name="search" id="search">
+                    <span><i class="fas fa-search"></i></span>
+                </div>
             </div>
             <div class="burger">
                 <p>Burger</p>
@@ -311,42 +66,87 @@
             </div>
         </nav>
     </header>
-    <section>
-        <div>
-            <ul>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">New books</a></li>
-                <li><a href="#">Upcoming</a></li>
-            </ul>
+
+    <main>
+        <div class="div1">
+            <section>
+                <h2>Welcome to our online library management System </h2>
+            </section>
         </div>
-        <div class="books">
-            <article>
-                <img src="/assets/images/c++.jpg" alt="Anatomy" />
-                <!-- <p>C++   programming</p>
-        <h3>Author</h3>
-        <span>19/06/2022</span> -->
-            </article>
-            <article>
-                <img src="/assets/images/java.jpg" alt="Anatomy" />
-                <!-- <p>Java Programmming</p>
-        <h3>Author</h3>
-        <span>19/06/2022</span> -->
-            </article>
-            <article>
-                <img src="/assets/images/OS.jpg" alt="Anatomy" />
-                <!-- <p>Operating System</p>
-        <h3>Author</h3>
-        <span>19/06/2022</span> -->
-            </article>
-            <article>
-                <img src="/assets/images/PDL.jpg" alt="Anatomy" />
-                <!-- <p>Operating System</p>
-        <h3>Author</h3>
-        <span>19/06/2022</span> -->
-            </article>
+        <div class="div2 ">
+            <h2>
+                <span>Technology</span>
+            </h2>
+            <h2>
+                <span>
+                    Science and research
+                </span>
+            </h2>
         </div>
+        <div class="div3">
+            <h2>
+                <span>Technology</span>
+            </h2>
+            <h2>
+                <span> Science and research </span>
+            </h2>
+        </div>
+    </main>
+
+
+    <section class="Category">
+        <ul>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Life</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Religous</a></li>
+            <li><a href="#">Languages</a></li>
+            <li><a href="#">Languages</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Politics</a></li>
+        </ul>
     </section>
 
+
+    <section class="section">
+        <article class="single">
+            <div class="title">
+                <h3>Programming</h3>
+            </div>
+            <div class="list">
+                <div>
+                    <img src="/assets/images/anatomy.jpg" alt="Images">
+                    <h5>Anatomy</h5>
+                </div>
+                <div>
+                    <img src="/assets/images/c++.jpg" alt="Images">
+                    <h5>Anatomy</h5>
+                </div>
+                <div>
+                    <img src="/assets/images/anatomy.jpg" alt="Images">
+                    <h5>Anatomy</h5>
+                </div>
+                <div>
+                    <img src="/assets/images/OS.jpg" alt="Images">
+                    <h5>Anatomy</h5>
+                </div>
+                <div>
+                    <img src="/assets/images/PDL.jpg" alt="Images">
+                    <h5>Anatomy</h5>
+                </div>
+                <div>
+                    <img src="/assets/images/anatomy.jpg" alt="Images">
+                    <h5>Anatomy</h5>
+                </div>
+                <div>
+                    <img src="/assets/images/anatomy.jpg" alt="Images">
+                    <h5>Anatomy</h5>
+                </div>
+            </div>
+        </article>
+
+    </section>
     <footer>
         <div>
             <h1>UR LMS</h1>
