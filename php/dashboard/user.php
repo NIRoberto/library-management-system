@@ -120,6 +120,10 @@ echo "hello";
                 Add new user
             </button>
         </div>
+
+        <table>
+            
+        </table>
     </main>
     <footer class="footer">
         <p>Powered by Robert Niyatanga</p>

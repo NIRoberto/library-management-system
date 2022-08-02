@@ -1,27 +1,24 @@
 <?php 
 // include "./config/connect.php";
-  $server = "localhost";
-  $user ="root";
-  $pass = "";
-  $db = "library"; 
-  
-  $con = mysqli_connect($server, $user, $pass, $db);
-  if($con){
-	  // echo "connected";  
-  }else{
-	  // echo "Connect failed ".mysqli_error($con);
-  } 
+require("../config/connect.php");
 
 $nameErr = $emailErr = $passErr  = "";
 $fullname = $email = $password = "";
+$valid ;
+$fullnamevalid = false;
+$emailvalid=false;
+$passwordvalid =false;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["fname"])) {
     $nameErr = "Name is required";
   } else {
-    $name = test_input($_POST["fname"]);
+    $fullname = test_input($_POST["fname"]);
     // check if name only contains letters and whitespace
     if (!preg_match("/^[a-zA-Z-' ]*$/",$fullname)) {
       $nameErr = "Only letters and white space allowed";
+    }
+    else{
+      $fullnamevalid=true;
     }
   }
   
@@ -33,15 +30,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       $emailErr = "Invalid email format";
     }
+    else{
+      $emailvalid=true;
+    }
   }
    if (empty($_POST["password"])) {
-    $emailErr = "Password is required";
+    $passErr = "Password is required";
   } else {
-    $email = test_input($_POST["email"]);
+    $password = test_input($_POST["password"]);
     // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "no space allowed";
-    }
+  if (strlen($password) < 8 and strlen($password) > 12 ) {
+      $passErr = "Password is smaller than 8  or greater than 12 characters ";
+} else {
+  $passwordvalid = true;
+}
   }
 }
 function test_input($data) {
@@ -50,8 +52,10 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+$valid = $fullnamevalid and $emailvalid and $passwordvalid;
 
-if(isset($_POST['submit'])){
+
+if(isset($_POST['submit']) and $valid){
 
 
 $createuser = "INSERT INTO users (fullname,email,password) VALUES ('$fullname','$email','$password')"; 
@@ -60,6 +64,11 @@ $result =	mysqli_query($con, $createuser);
 			}else{
 				echo "<p style='color:red;'>there is error ".mysqli_error($con)."</p>";
 		    }
+$fullname = $email = $password = "";
+$valid ;
+$fullnamevalid = false;
+$emailvalid=false;
+$passwordvalid =false;
 ?>
 
 <!DOCTYPE html>
@@ -77,7 +86,7 @@ $result =	mysqli_query($con, $createuser);
 
     <center>
       
-     <a href="/index.html">
+     <a href="../index.html">
             <h1>UR LMS</h1>
         </a>
       <form method="post"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
