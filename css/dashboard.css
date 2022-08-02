@@ -58,7 +58,6 @@ body .sidebar .users .Users {
   justify-content: space-between;
   padding: 0.5rem;
 }
-
 .fa-plus {
   font-size: 10px;
 }
@@ -77,7 +76,6 @@ body .sidebar .users .sub-item div span {
 }
 
 /*   Navigation bar in dashboard */
-
 body nav {
   background-color: white;
   display: flex;
@@ -148,28 +146,4 @@ body .content {
   height: 100vh;
   grid-column: 2/-1;
   background-color: var(--main-bg-color);
-}
-
-main {
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
-}
-main div {
-  background-color: chocolate;
-  padding: 5rem 6rem;
-  border-radius: 0.5em;
-  color: white;
-}
-
-body .footer {
-  background-color: #014f70;
-  grid-column: 2/-1;
-  text-align: center;
-  color: wheat;
-}
-body .footer p {
-  padding: 0.5rem;
-  font-size: small;
 }

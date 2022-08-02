@@ -1,189 +1,181 @@
 :root {
-    --main-color: #029ddd;
-    --main-color-2: #016792;
-    --main-bg-color: #edf9ff;
-    --main-dashboard-color: ##036f9d;
-    --text-color: #222222;
-  }
-  
-  * {
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-  }
-  
-  
-  
-  
-  /*    books  styles */
-  
-  body nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  ul {
-    display: none;
-  }
-  body nav div {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-  body nav .div {
-    display: flex;
-    align-items: center;
-  }
-  
-  body nav input {
-    outline: none;
-    border: 1px solid grey;
-    border-radius: 6px;
-    width: 90%;
-    padding: 0.7rem 1.3rem;
-  }
-  
-  body nav input:focus {
-    border: 2px solid var(--main-color);
-  }
-  
-  body nav .search .main {
-    /* border: 1px solid #029ddd; */
-    width: 70%;
-  }
-  
-  .main{
-      display: flex;
-  }
-  .main span {
-    text-align: center;
-    padding: 0.5rem;
-    cursor: pointer;
-  
-  }
-  .main span  i {
-      font-size: large;
-      color: var(--main-color);
-  }
-  ul{
-      list-style-type: none;
-  }
-  
-  
-  main{
-   height: 100vh;
-   display: grid;
-   grid-template-columns: repeat(2,2fr);
-   grid-template-rows: repeat(2,1fr);
-   gap: 0.3rem;
-  }
-  main .div1{
-    grid-row: 1/-1;
-  }
-  main .div1 section {
+  --main-color: #029ddd;
+  --main-color-2: #016792;
+  --main-bg-color: #edf9ff;
+  --main-dashboard-color: ##036f9d;
+  --text-color: #222222;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/*    books  styles */
+
+body nav {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  display: none;
+}
+body nav div {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+body nav .div {
+  display: flex;
+  align-items: center;
+}
+
+body nav input {
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 6px;
+  width: 90%;
+  padding: 0.7rem 1.3rem;
+}
+
+body nav input:focus {
+  border: 2px solid var(--main-color);
+}
+
+body nav .search .main {
+  /* border: 1px solid #029ddd; */
+  width: 70%;
+}
+
+.main {
+  display: flex;
+}
+.main span {
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.main span i {
+  font-size: large;
+  color: var(--main-color);
+}
+ul {
+  list-style-type: none;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.3rem;
+}
+main .div1 {
+  grid-row: 1/-1;
+}
+main .div1 section {
   background-image: url(../assets/images/bg.jpeg);
   height: 100%;
   color: white;
   width: 100%;
   margin-top: -0.1rem;
   padding: 3rem;
-  }
-  main .div1 section h2{
-    color: white;
-    font-size: xx-large;
-    width: 90%;
-  }
-  
-  main .div1 .bg {
+}
+main .div1 section h2 {
+  color: white;
+  font-size: xx-large;
+  width: 90%;
+}
+
+main .div1 .bg {
   background-image: url(../assets/images/bg.jpeg);
   background-color: white;
   border: 1px solid;
-  }
-  main .div1 .content {
-    font-size: 30px;
-  }
-  main .div2{
-    grid-row: 1/2;
-    /* border: 1px solid red; */
-    display: grid;
-   gap: 0.3rem;
-  
-    grid-template-columns: repeat(2,1fr);
-  
-  }
-  main .div2 h2{
-    background-image: url(../assets/images/bg.jpeg);
-  }
-  main .div2 h2 span{
-    color: white;
-    font-weight: 400;
-    padding: 1rem;
-  }
-  main .div3{
-    grid-row: 2/-1;
-    display: flex;
-    display: grid;
-    gap: 0.3rem;
-    grid-template-columns: repeat(2,1fr);
-  }
-  main .div3 h2{
-    background-image: url(../assets/images/bg.jpeg);
-  }
-  main .div3 h2 span{
-    color: white;
-    font-weight: 400;
-    padding: 1rem;
-  }
-  .section{
-    background-color: whitesmoke;
-    padding: 1rem;
-  }
-  .section article .title{
-    padding:  1rem 0rem;
-  }
-  
-  .section article{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  } 
-  .section article .list{
-   display: grid;
-   grid-template-columns: repeat(7,1fr);
-   gap: 2rem;
-  }
-  
-  .section article .list div{
-    width: 100%;
-  }
-  .section article .list div img{
-     width: 100%;
-     height: 80%;
-  }
-  
-  /* Category */
-  
-  
-  .Category{
-    display: flex;
-    flex-direction:column;
-  }
-  .Category  ul{
-    display: grid;
-    grid-template-columns: repeat(9,1fr);
-    margin: 0 1rem;
+}
+main .div1 .content {
+  font-size: 30px;
+}
+main .div2 {
+  grid-row: 1/2;
+  /* border: 1px solid red; */
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main .div2 h2 {
+  background-image: url(../assets/images/back.jpg);
+}
+main .div2 h2 span {
+  color: white;
+  font-weight: 400;
+  padding: 1rem;
+}
+main .div3 {
+  grid-row: 2/-1;
+  display: flex;
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .div3 h2 {
+  background-image: url(../assets/images/libry.jpg);
+}
+main .div3 h2 span {
+  font-weight: 400;
+  padding: 1rem;
+}
+.section {
+  background-color: whitesmoke;
+  padding: 1rem;
+}
+.section article .title {
+  padding: 1rem 0rem;
+}
+
+.section article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.section article .list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 14.6%);
+  gap: 2rem;
+}
+
+.section article .list div {
+  width: 100%;
+}
+.section article .list div img {
+  width: 100%;
+  height: 80%;
+}
+
+/* Category */
+
+.Category {
+  display: flex;
+  flex-direction: column;
+}
+.Category ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10%);
+  margin: 0 1rem;
   gap: 1rem;
-  }
-  
-  .Category ul li {
-    text-align: center;
-  }
-  
-  .Category ul li a{
-    border-radius: 10px;
-    background-color: white;
-    padding: 1rem 1.8rem;
-  }
-    
+}
+
+.Category ul li {
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem 1.8rem;
+  cursor: pointer;
+}
+span{
+  color: white;
+}

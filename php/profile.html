@@ -2,45 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile management | LMS </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Library management system tutorial</title>
+    <!-- Font awesome  -->
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
 </head>
-<link rel="stylesheet" href="/css/dashboard.css">
+
 <body>
     <div class="sidebar">
         <div class="header">
             <a href="#">UR LMS</a>
         </div>
-
         <div class="profile">
             <div>
                 <span>
                     <i class="fas fa-user-alt"></i>
                 </span>
-                <span>
-                    Profile
-                </span>
+                <a href="/html/profile.html">
+                    <span>
+                      Query
+                    </span>
+                </a>
             </div>
         </div>
         <div class="users">
             <div class="Users">
                 <span><i class="fas fa-users"></i>
-                    Users</span>
+                    <a href="/html/dashboard/user.html">
+                        Users
+                    </a>
+                </span>
             </div>
         </div>
         <div class="users">
             <div class="Users">
-                <span><i class="fas fa-book"></i>
-                    Books</span>
+                <a href="/html/dashboard/book.html">
+                    <span><i class="fas fa-book"></i>
+                        Books
+                    </span>
+                </a>
             </div>
         </div>
         <div class="users">
-            <div class="Users">
-                <span><i class="fas fa-comment"></i>
-                    Messages</span>
-            </div>
+            <!-- <div class="Users">
+                    <span><i class="fas fa-comment"></i>
+                        Messages</span>
+                </div> -->
         </div>
         <div>
         </div>
@@ -92,23 +102,46 @@
             </div>
         </div>
     </nav>
-<main>
 
-    <div class="btn"><button>All User</button></div>
-    <div class="btn"><button>Add new User</button></div>
-    <div class="btn"><button> Change Role</button></div>
-
-    <table>
-        <thead>
+    <main class="content">
+        <table>
             <tr>
-                <td></td>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Full name
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Password
+                </th>
             </tr>
-        </thead>
-    </table>
-</main>
+
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    Robert Niyitanga
+                </td>
+                <td>
+                    rob@gmail.com
+                </td>
+                <td>
+                    12312123
+                </td>
+
+            </tr>
+        </table>
+    </main>
     <footer class="footer">
         <p>Powered by Robert Niyatanga</p>
     </footer>
+
+
 </body>
 
 </html>

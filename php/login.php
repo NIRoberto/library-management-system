@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Library System</title>
-    <link rel="stylesheet" href="/css/auth.css">
+    <link rel="stylesheet" href="../css/auth.css">
   </head>
   <body>
     <div class="div">
@@ -29,7 +29,7 @@
               <!-- </a>       -->
           </button>
         <div>
-          <a href="/html/register.html">Create account here</a>
+          <a href="./register.php">Create account here</a>
           <span>If you are not registered Yet.</span>
         </center>
       </div>
